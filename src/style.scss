@@ -1,0 +1,26 @@
+    /* File: ./src/style.scss */
+    $primary-color: #272727;
+    $secondary-color: #c6538c;
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      padding: 0 16px;
+      margin: 50px auto 0;
+
+      h1 {
+        margin: 0;
+        text-align: center;
+        color: $primary-color;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Open Sans',
+          'Helvetica Neue', sans-serif;
+
+        span {
+          color: $secondary-color;
+        }
+      }
+    }
