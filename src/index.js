@@ -1,12 +1,12 @@
-// File: ./src/index.js
-import generateRandomString from './utilities/random';
-
+import RandomStringGenerator from './utilities/random';
 import './style.scss';
 
-document.addEventListener('DOMContentLoaded', function () {
-  let randomString = `Hello World! : <span>${generateRandomString()}</span>`;
+document.addEventListener('DOMContentLoaded', () => {
+  const randomStringGenerator = new RandomStringGenerator();
+  const randomStr = `Random String: <span>${randomStringGenerator.generate()}</span>`;
 
-  window.setTimeout(function () {
-    document.getElementsByTagName('h1')[0].innerHTML = randomString
-  }, 0);
+  window.setTimeout(
+    () => (document.getElementsByTagName('h1')[0].innerHTML = randomStr),
+    0
+  );
 });

@@ -1,3 +1,31 @@
+
+==================================
+// Installing Babel in our project
+==================================
+
+$ npm install --save-dev babel-loader @babel/core
+
+// Configuring the Babel loader
+-------------------------------
+          {
+            test: /\.js$/,
+            exclude: /node_modules/,
+            loader: 'babel-loader'
+          }
+
+// Open the src/utilities/random.js file and replace the contents (to ES6 Class module)
+
+// update the main JavaScript file to use the new class. Open the src/index.js 
+
+// Now that we have Babel configured, let’s move on to installing the Babel env preset, which enables transforms for ECMAScript 6+. To install the preset, run the following command:
+
+    $ npm install @babel/preset-env --save-dev
+
+// This will install the dependency and after the installation is complete, we can build the assets using webpack:
+
+    $ npm run build
+
+
 ///////////////////////
 // PART 3 CONCLUSION //
 ///////////////////////
